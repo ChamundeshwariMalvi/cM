@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 8px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: relative;
+            background: linear-gradient(blue,pink);
+            animation:bounce 1s  ease-in infinite alternate;
+        }
+        @keyframes bounce {
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform:translateY(80vh)  rotate(360deg);
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

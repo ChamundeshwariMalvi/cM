@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            background-color: blue;
+            border: 2px solid yellow;
+            overflow: auto;
+            height: 30vh ;
+            width: 20vw;
+            padding: 20px;
+            text-align: center;
+            transition-duration: 2000ms;
+            transition-property:all;
+        }
+        div:hover{
+            background-color: aqua;
+            border-radius: 100%;
+
+        } */
+         #outer_box{
+            padding-top: 5px;
+            /* border: 2px solid black; */
+            width: 0px;
+            /* height: 40px; */
+            transition-property: width;
+            transition-duration: 500ms;
+
+         }
+         #outer_box:hover{
+            width: 100px;
+            background-color: aqua;
+         }
+         inner_box{
+            width: 100px;
+            
+         }
+    </style>
+</head>
+<body>
+    <div id="outer_box">
+              
+              <div id="inner_box">Jai Shree Ramm!!</div>
+    </div>
+</body>
+</html>

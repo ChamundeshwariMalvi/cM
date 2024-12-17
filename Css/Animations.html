@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+        border: 8px solid blue;
+        height: 100vh;
+        width: 100vw;
+    }
+    #box{
+        height: 80px;
+        width: 100px;
+        background-color:yellow ;
+        border: 2px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        animation-name: rightmovement;
+        position: relative;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out
+ 
+    }
+    @keyframes rightmovement {
+        from{
+            left: 10px;
+        }
+
+        to{
+             left: 530px;
+        }
+    }
+    
+    
+    #box1{
+        height: 80px;
+        width: 100px;
+        background-color: yellow;
+        border: 2px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        position: relative;
+        animation-name: leftmovement;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes leftmovement {
+        from {
+          top: 115px;
+          left: 10px;
+        }
+        to {
+          top: 115px;
+          left: 530px;
+        }
+      }
+    #ball{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: brown;
+        border: 2px solid black;
+        animation-name: ballmovement;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: relative;
+    }
+    @keyframes ballmovement {
+        0%{
+            top: 1%;
+            left: 2%;
+        }
+        30%{
+             top: 1%;
+             left: 90%;
+        }
+        60%{
+             top: 37%;
+             left: 2%;
+        }
+        100%{
+             top: 37%;
+             left: 90%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+        <div id="ball"></div>
+        <div id="box1"></div>
+
+
+
+    </div>
+</body>
+</html>

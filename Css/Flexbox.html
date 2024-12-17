@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            padding: 2px;
+            border: 5px solid black;
+            background-color: hwb(125 20% 20%);
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            justify-items: center;
+            /* align-items: center; */
+        }
+        img{
+            margin: 2px;
+            border: 2px solid black;
+        }
+        #box{
+            align-self:self-start;
+
+        }
+        #box1{
+            align-self: center;
+        }
+        #box2{
+            align-self:center;
+        }
+        #box3{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+       <div id="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWYOrgR1Q1OT6spNnn3FaU2T8uFpXwF7APAg&s" alt="" width="200px" height="200"></div> 
+
+       <div id="box1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzz32155P8DCetkqrLuyzG-9Ic2vMGn2DntQ&s" alt="" width="200px" height="200" ></div>
+
+        <div id="box2"><img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg" alt="" width="200px" height="200"></div>
+
+        <div id="box3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fSs8cbxCd1fPiPmHQ2PBB6rwXTOJGW_kyg&s" alt="" width="200px" height="200"></div>
+    </div>
+</body>
+</html>
